@@ -18,6 +18,5 @@ let space = document.getElementById('quotes_div')
 const randomQuotesFunc=()=>{
     let random1 = Number(Math.floor(Math.random()*4))
     let random2 = Number(Math.floor(Math.random()*2))
-    console.log(quotes[random1][random2])
     space.innerHTML=`<h3>${quotes[random1][random2]}</h3>`
 }
