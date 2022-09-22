@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+    <style>
+        *{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: #1e1e1c;
+        }
+        #container_{
+            position: absolute;
+            left: 300px;
+            height: 500px;
+            width: 800px;
+           color: #ae3d00;
+        }
+        #quotes_div{
+           position: relative;
+            left: 70px;
+            top: 80px;
+            height: 300px;
+            width: 700px;
+            align-content: center;
+            color: #f6e0b5;
+        }
+        #generate_button{
+            position: relative;
+            left: 330px;
+            background-color:#ae3d00;
+        }
+        #generate_button:hover{
+            background-color: #f6e0b5;
+        }
+        #header_{
+            text-align: center;
+            background-color: inherit;
+        }
+        #quote-h3{
+            height: 300px;
+            width: 700px;
+            z-index: 3;
+            text-align: center;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div id="container_">
+        <h1 id="header_">Random Quote Generator</h1>
+        <div id="quotes_div"><h3 id="quote-h3">quote</h3></div>
+        <button id="generate_button" onclick="randomQuotesFunc()">Generate a random quote</button>
+    </div>
+    <script src="randomQuoteGeneratorjs.js"></script>
+</body>
+</html>
